@@ -11,9 +11,9 @@ app.use(express.json());
 // allow cors for communication of front and back end
 app.use(cors());
 
-
 // morgan tiny format
 app.use(morgan('tiny'));
+app.use(express.static('dist'));
 
 // generate ID funtion
 const generateId = () => {
